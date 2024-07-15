@@ -1,0 +1,37 @@
+.productpage-list-conatiner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #fff;
+  svg {
+    margin-right: 0.5rem;
+  }
+  label {
+    text-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+      0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  .productpage-body {
+    display: flex;
+    flex-direction: row;
+    padding: 2px 0;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .productlist-gotocart {
+    position: absolute;
+    right: 2.5rem;
+    bottom: 2.5rem;
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    padding: 0.8rem;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .productlist-gotocart:hover {
+    transform: scale(1.1);
+  }
+}
