@@ -80,7 +80,7 @@ export const EcommerceApp: React.FC = () => {
             isWarning: false,
             messageToDisplay: message,
           });
-          setScreenShiftFlag((prev) => ({ ...prev, shiftToSignIn: true }));
+          setScreenShiftFlag({ shiftToUserView: false, shiftToSignIn: true });
         } else {
           setShowWarning({
             showPopup: true,
@@ -291,7 +291,7 @@ export const EcommerceApp: React.FC = () => {
             isWarning: false,
             messageToDisplay: message,
           });
-          setScreenShiftFlag((prev) => ({ ...prev, shiftToUserView: true }));
+          setScreenShiftFlag({ shiftToSignIn: false, shiftToUserView: true });
         } else {
           setShowWarning({
             showPopup: true,

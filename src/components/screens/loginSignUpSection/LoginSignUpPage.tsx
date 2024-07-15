@@ -169,7 +169,6 @@ export const SigninSignUpPage: React.FC<SigninSignUpPageProps> = ({
         };
       }
     });
-    console.log(newErrorData, "newErrorData");
     setSigninSignupPageData(newSigninSignUpData);
     setTextFeildsError(newErrorData);
     if (!isError) {

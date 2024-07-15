@@ -85,8 +85,11 @@ export const CommonAppHeader: React.FC<CommonAppHeaderProps> = ({
       </label>
       <label className="user-welcome">{greetingText}</label>
     </div>
-    <div className="heading-right" onClick={accountDetailsClick}>
-      <HeaderBlock className="heading-accountdetails">
+    <div className="heading-right">
+      <HeaderBlock
+        className="heading-accountdetails"
+        onClick={accountDetailsClick}
+      >
         <AccountCircleIcon />
         {userName}
       </HeaderBlock>
