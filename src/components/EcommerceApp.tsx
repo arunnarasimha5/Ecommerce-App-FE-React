@@ -455,6 +455,7 @@ export const EcommerceApp: React.FC = () => {
                       getSelectedTabProductList(productTabData?.selectedTab);
                     }
                   }}
+                  creditDetails={currentUserData?.credit || 0}
                 />
               </RequireAuth>
             }

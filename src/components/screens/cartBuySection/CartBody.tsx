@@ -106,6 +106,7 @@ type CartDetails = {
 
 type CartBodyType = {
   cartDetails: CartDetails[];
+  creditDetails: number;
   deleteButtonClick: (productDetails: CartDetails) => void;
   buyButtonClick: () => void;
   backToProductListNav: () => void;
@@ -130,6 +131,7 @@ export const CartBody: React.FC<CartBodyType> = ({
   cartDetails,
   deleteButtonClick,
   backToProductListNav,
+  creditDetails,
 }) => {
   const [summaryData, setSummaryData] = useState(
     getSummaryDetails(cartDetails)
@@ -175,7 +177,9 @@ export const CartBody: React.FC<CartBodyType> = ({
         <span className="summary-detail-row">
           No of Items : {summaryData.noOfItems}
         </span>
-        <span className="summary-detail-row">Estimated Taxes & Fees : ₹0</span>
+        <span className="summary-detail-row">
+          Available Credit : ₹{creditDetails}
+        </span>
         <span className="summary-detail-row">
           Total : ₹{summaryData.subTotalAmount}
         </span>

@@ -14,6 +14,7 @@ export type ProductListType = {
 type CartBuyPageProps = {
   userName: string;
   cartDetails: ProductListType[];
+  creditDetails: number;
   removeCartItem: (itemDetails: ProductListType) => void;
   buyButtonClick: () => void;
   accountDetailsClick: () => void;
@@ -40,6 +41,7 @@ export const CartBuyPage: React.FC<CartBuyPageProps> = ({
   accountDetailsClick,
   logoutClick,
   backToProductListNav,
+  creditDetails,
 }) => (
   <CartBuyPageContainer>
     <CommonAppHeader
@@ -54,6 +56,7 @@ export const CartBuyPage: React.FC<CartBuyPageProps> = ({
         buyButtonClick={buyButtonClick}
         deleteButtonClick={removeCartItem}
         backToProductListNav={backToProductListNav}
+        creditDetails={creditDetails}
       />
     </div>
   </CartBuyPageContainer>

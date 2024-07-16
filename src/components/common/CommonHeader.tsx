@@ -13,7 +13,7 @@ type CommonAppHeaderProps = {
 
 const CommonHeaderContainer = styled.div`
   width: 100%;
-  height: 16%;
+  height: 15%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
