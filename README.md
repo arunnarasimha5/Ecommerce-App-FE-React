@@ -36,7 +36,7 @@ Ensure you have the following installed on your local machine:
    yarn start   
   * Ensure it runs on localhost:3000 to match the CORS configuration in the Spring Boot application. If you want to use a different port, update the CORS configuration in the Spring Boot app accordingly.
 
-## *Now, your E-commerce App is up and running!*
+## *Now, your E-commerce FE App is up and running!*
 
 ## Packages Used
  * Axios - For API Calls
